@@ -1,21 +1,15 @@
-.coming-soon {
-    text-align: center;
-    background-color: #f7f7f7;
-    padding: 20px;
-    border-radius: 10px;
-    animation: fade-in 1.5s ease-out;
-}
+html, body {
+    padding: 0;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    background: black;
+  }
 
-@keyframes fade-in {
-    0% { opacity: 0; transform: translateY(-20px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-
-/* Styles pour la réactivité */
-@media (max-width: 768px) {
-    .coming-soon {
-        font-size: 18px;
-    }
-}
-
-/* Ajoutez d'autres media queries pour différentes tailles d'écran */
+  html, body {
+    padding: 0;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    background: black;
+  }
