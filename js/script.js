@@ -1,6 +1,6 @@
 // Configuration
 const snowContainer = document.body; // Ajouter les flocons au body
-const numberOfFlakes = 50; // Nombre total de flocons à afficher
+const numberOfFlakes = 200; // Nombre total de flocons à afficher
 
 function createSnowflake() {
     const snowflake = document.createElement('div');

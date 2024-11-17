@@ -87,11 +87,20 @@ h1 {
     align-items: center;
     text-align: center;
     min-height: 100vh;
+    animation: start 3s;
 
 }
 
+/* Animation @keyframes */
+@keyframes start {
 
-
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 
 main {
@@ -153,6 +162,10 @@ main h2 {
     min-height: 100vh;
 }
 
+#fr h3,#en h3{
+    font-size: 4rem;
+}
+
 /* Animation @keyframes */
 @keyframes bounce {
 
@@ -191,14 +204,12 @@ main h2 {
     }
 
     100% {
-        transform: translateY(100vh);
+        transform: translateY(200vh);
         opacity: 0;
-        /* Les flocons disparaissent en bas */
     }
 }
 
 
-/* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
     width: 5px;
 }
@@ -211,4 +222,28 @@ main h2 {
     background-color: #1d1d26;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.icone.sticky {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: sticky;
+    width: fit-content;
+    top: 90vh; /* Ajuste selon où tu veux que le bouton soit collé */
+    left: 97vw;
+    padding: 10px; /* Ajuste selon ton design */
+    z-index: 10; /* Assure que le bouton reste au-dessus des autres éléments */
+}
+
+.icone svg {
+    height: 40px;
+    width: 40px;
+    left: 10%; /* Attention : cette propriété n'a d'effet que si l'élément est positionné (relative, absolute, fixed ou sticky). */
+}
+
+.icone.sticky:hover {
+    background-color: white; /* "fill" s'applique uniquement aux éléments SVG. */
+}
+.icone.sticky:hover svg {
+    fill: #1d1d26; /* Appliquer le changement de couleur sur le SVG à l'intérieur. */
 }
