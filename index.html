@@ -1,43 +1,51 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>soydex page</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <meta name="description" content="The beggining of everything" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/helpers.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-</head>
-<body>
-<div class="container">
-  <main>
-    <header>
-      <h2 class="subheader">— Soydex</h2>
-      <h1>The beginning of a hopefull long <em>story.</em></h1>
-      <p>I use Python language to create easy and free programs for everyone.</p>
-    </header>
+  <body>
+    <h1>Welcome your journey starts here</h1>
+    <a href="#main">
+      <svg
+        id="svg_arrow"
+        width="4rem"
+        height="4rem"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7 13L12 18L17 13M7 6L12 11L17 6"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </a>
 
-    <img src="https://i.postimg.cc/k5rb9s7K/thumb-1920-985381.jpg" alt="" />
-
-    <section>
-      <h2>Name</h2>
-      <p>Still in creation...</p>
-    </section>
-
-    <section>
-
-      <h2>Name</h2>
-      <p>Still in creation...</p>
-    </section>
-    <div class="callout">
-      <h3>Work in progress !</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur magni dolores iusto nulla vitae, reiciendis amet veritatis aliquam iste temporibus itaque aliquid, eveniet saepe reprehenderit distinctio eaque libero, culpa tenetur.</p>
-    </div>
-
-    <img src="https://i.postimg.cc/k5rb9s7K/thumb-1920-985381.jpg" alt='' />
-  </main>
-</div>
-
-<script src="https://codepen.io/shshaw/pen/QmZYMG.js"></script>
-  
-</body>
+    <main id="main">
+      <h2>Choose Your language</h2>
+      <div class="buttons">
+        <a href="#en">EN</a>
+        <a href="#fr">FR</a>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
