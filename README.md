@@ -1,3 +1,3 @@
 # soydex.github.io
 
-[Website](soydex.github.io)
+[Website](https://soydex.github.io/)
