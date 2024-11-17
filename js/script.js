@@ -5,7 +5,7 @@ const numberOfFlakes = 50; // Nombre total de flocons à afficher
 function createSnowflake() {
     const snowflake = document.createElement('div');
     snowflake.classList.add('snowflake');
-    
+
     // Position horizontale aléatoire
     snowflake.style.left = Math.random() * 98 + 'vw';
 

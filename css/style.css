@@ -74,7 +74,7 @@
 
 body {
     background-color: #1d1d26;
-    
+
 }
 
 h1 {
@@ -141,6 +141,18 @@ main h2 {
 
 }
 
+
+
+#fr,
+#en {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
 /* Animation @keyframes */
 @keyframes bounce {
 
@@ -159,12 +171,15 @@ main h2 {
 
 .snowflake {
     position: absolute;
-    top: -10px; /* Commence hors de l'écran */
+    top: -10px;
+    /* Commence hors de l'écran */
     background-color: white;
     width: 8px;
     height: 8px;
-    border-radius: 50%; /* Rendre chaque flocon circulaire */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Effet de glow */
+    border-radius: 50%;
+    /* Rendre chaque flocon circulaire */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    /* Effet de glow */
     animation: fall linear infinite;
     z-index: 10;
 }
@@ -174,9 +189,11 @@ main h2 {
         transform: translateY(-10px);
         opacity: 1;
     }
+
     100% {
         transform: translateY(100vh);
-        opacity: 0; /* Les flocons disparaissent en bas */
+        opacity: 0;
+        /* Les flocons disparaissent en bas */
     }
 }
 
@@ -184,14 +201,14 @@ main h2 {
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
     width: 5px;
-  }
-  
-  *::-webkit-scrollbar-track {
+}
+
+*::-webkit-scrollbar-track {
     background: #1d1d26;
-  }
-  
-  *::-webkit-scrollbar-thumb {
+}
+
+*::-webkit-scrollbar-thumb {
     background-color: #1d1d26;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.5);
-  }
+}
