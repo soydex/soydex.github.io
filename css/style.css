@@ -278,7 +278,37 @@ footer p {
   */
 
 @media (min-width: 320px) and (max-width: 480px) {
+    #prod{
+        display: none;
+    }
 
-    /* CSS */
+    #character{
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
 
+    #character img {
+        height: 400px;
+    }
+
+    #character_traits{
+        flex-direction: column-reverse;
+        gap: 2rem;
+        padding: 4rem 1rem;
+    }
+
+    #character_traits img {
+        height: 400px;
+    }
+    #characters{
+        width: auto;
+        height: auto;
+    }
+    .characters_content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    video{
+        width: 100%;
+        height: auto;
+    }
 }
