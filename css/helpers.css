@@ -18,11 +18,7 @@ body {
   font-size: 1.6rem;
 }
 
-/* Set text selection */
-::selection {
-  color: #000;
-  background-color: #fd0;
-}
+
 
 /* Set cursor pointer */
 label[for],
