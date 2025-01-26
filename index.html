@@ -1,52 +1,126 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
-    <meta name="description" content="The beggining of everything" />
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <link rel="icon" href="/favicon.ico" sizes="any" />
-    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/helpers.css" />
+    <title>TV Series Bible</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
-    <h1 class="anim">Hi Buddy Welcome Aboard !</h1>
-    <div class="sticky">
-      <a href="#main">
-        <svg
-          id="svg_arrow"
-          width="4rem"
-          height="4rem"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M7 13L12 18L17 13M7 6L12 11L17 6"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </a>
-    </div>
-    <main id="main">
-      <h2>Choose Your language</h2>
-      <div class="buttons">
-        <a href="/pages/en.html">EN</a>
-        <a href="/pages/fr.html">FR</a>
+    <main>
+      <section class="hero">
+        <div id="prod">
+          <div id="img_prod">
+            <img src="img/planet.svg" alt="Universal Television Logo" />
+          </div>
+          <div id="text_prod">
+            <span>UNIVERSAL TELEVISION</span>
+            <p>PRODUCTIONS</p>
+          </div>
+        </div>
+        <h1>BROOKLYN 99</h1>
+      </section>
+      
+      <section id="plot">
+        <div id="plot_div_img">
+          <img class="plots_img" src="img/plotbackground.png" alt="Background" />
+        </div>
+        <div class="plot_text">
+          <h2 style="font-size: 4rem;">PLOT</h2>
+          <p style="font-size: 2.8rem; font-weight: bolder;">How can the worst police station in New York City become the most popular precinct?</p>
+        </div>
+      </section>
+
+      <section id="character">
+        <div class="left_character">
+        <h2>MY FAVORITE CHARACTER</h2>
+        <ul class="character_info">
+          <li>Name : Jake Peralta</li>
+          <li>Age : 38</li>
+          <li>Nationality : American</li>
+        </ul>
       </div>
+      <div class="right_character">
+        <img src="img/jake.jpg" alt="Jake Peralta" />
+      </section>
+
+      <section id="character_traits">
+        <div class="left_character_traits">
+        <h2>KEY TRAITS</h2>
+        <ul>
+          <li>Charming & Immature : Loves jokes, pranks, and Die Hard.</li>
+          <li>Brilliant Detective : Exceptional instincts and unconventional methods.</li>
+          <li>Loyal & Compassionate : Deeply cares for friends and colleagues.</li>
+          <li>Growth-Oriented : Matures over time, balancing humor with responsibility.</li>
+        </ul>
+        </div>
+        <div class="right_character_traits">
+          <img src="img/jakegif.gif" alt="Jake Peralta" />
+        </div>
+      </section>
+
+      <section id="characters">
+        <h2>MAIN INTERACTIONS</h2>
+      
+        <div class="character_card">
+          <div class="character_card_img">
+            <img src="img/holt.jpg" alt="Captain Raymond Holt" />
+          </div>
+          <div class="character_card_text">
+            <h3>Captain Raymond Holt</h3>
+            <p>Captain Raymond Holt is the stoic and methodical leader of the 99th precinct. As the first openly gay and Black NYPD captain, he is a trailblazer who balances professionalism with a subtle sense of humor. Despite his serious demeanor, he deeply cares for his team and acts as a mentor and father figure to Jake Peralta.</p>
+          </div>
+        </div>
+      
+        <div class="character_card">
+          <div class="character_card_img">
+            <img src="img/amy.jpg" alt="Amy Santiago" />
+          </div>
+          <div class="character_card_text">
+            <h3>Amy Santiago</h3>
+            <p>Amy Santiago is an ambitious and highly organized detective with a passion for rules and a drive to succeed. She’s competitive, often seeking Captain Holt’s approval, and her relationship with Jake evolves from friendly rivalry to a loving partnership, culminating in marriage.</p>
+          </div>
+        </div>
+      
+        <div class="character_card">
+          <div class="character_card_img">
+            <img src="img/boyle.jpg" alt="Charles Boyle" />
+          </div>
+          <div class="character_card_text">
+            <h3>Charles Boyle</h3>
+            <p>Charles Boyle is Jake Peralta’s loyal and supportive best friend. Known for his quirky personality and love of gourmet food, Charles often provides comic relief. Despite his awkwardness, he is a dedicated detective and values his relationships deeply, especially his friendship with Jake.</p>
+          </div>
+        </div>
+      
+        <div class="character_card">
+          <div class="character_card_img">
+            <img src="img/terry.jpg" alt="Terry Jeffords" />
+          </div>
+          <div class="character_card_text">
+            <h3>Terry Jeffords</h3>
+            <p>Terry Jeffords is the muscular and kind-hearted sergeant of the 99th precinct. He’s a loving father to three daughters and often struggles with balancing his protective instincts with his duty as a leader. His nurturing personality contrasts humorously with his intimidating physical presence.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="episodes">
+        <h2>An Extract !</h2>
+        <p>This is a cool extract of the series where you can see the most importants characters in it.</p>
+        <div style="text-align: center;">
+          <video id="videoPlayer" width="1280" height="720" controls>
+              <source src="img/extract.mp4" type="video/mp4">
+              Votre navigateur ne supporte pas la balise vidéo.
+          </video>
+      </div>
+      </section>
+
+      <section id="end">
+        <h2>Thank you !</h2>
+      </section>
+
+      <footer>
+        <p>Thank you for visiting!</p>
+      </footer>
     </main>
-    <script src="js/script.js"></script>
   </body>
 </html>
