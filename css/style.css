@@ -333,6 +333,9 @@ footer p {
   */
 
 @media (min-width: 320px) and (max-width: 480px) {
+    h1{
+        margin-bottom: 10rem;
+    }
     #prod{
         display: none;
     }
