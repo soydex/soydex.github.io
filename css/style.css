@@ -114,7 +114,18 @@ section {
 .right_character:hover .hover-text,.right_character:hover .hover-text2,.right_character:hover .hover-text3 {
     opacity: 1;
 }
+.right_character_traits{
+    position: relative;
+    display: inline-block;
+}
 
+.right_character_traits img{
+    display: block;
+}
+
+.right_character_traits:hover .hover-text,.right_character_traits:hover .hover-text2,.right_character_traits:hover .hover-text3 {
+    opacity: 1;
+}
 
 .character_info {
     display: flex;
@@ -141,7 +152,6 @@ section {
     height: 800px;
     border: 4px solid #c89f65;
     box-shadow: 0 0 20px 10px #c89f65;
-    z-index: 11;
 }
 
 main {
@@ -371,3 +381,25 @@ footer p {
         height: auto;
     }
 }
+
+
+/* Styles pour les navigateurs modernes (Webkit - Chrome, Safari, Edge, Opera) */
+::-webkit-scrollbar {
+    width: 12px; /* Largeur de la barre de défilement verticale */
+    height: 12px; /* Hauteur de la barre de défilement horizontale */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(241, 241, 241, 0); /* Couleur de l'arrière-plan de la piste */
+    border-radius: 10px; /* Coins arrondis */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(241, 241, 241, 0); /* Couleur du "pouce" (la partie mobile) */
+    border-radius: 10px; /* Coins arrondis */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(241, 241, 241, 0); /* Couleur du "pouce" en survol */
+  }
+  
