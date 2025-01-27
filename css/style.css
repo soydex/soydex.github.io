@@ -343,6 +343,7 @@ footer p {
     #character{
         flex-direction: column-reverse;
         gap: 2rem;
+        justify-content: flex-end;
     }
 
     #character img {
