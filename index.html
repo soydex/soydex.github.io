@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            transition: background-color 0.5s, color 0.5s;
+        }
+        body.dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .toggle-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px;
+            background-color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+        body.dark-mode .toggle-button {
+            background-color: #333333;
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body>
+    <button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
     <h1>Bonjour</h1>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
 </body>
 </html>
