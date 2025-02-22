@@ -1,0 +1,22 @@
+body {
+    transition: background-color 0.5s, color 0.5s;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+.toggle-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+body.dark-mode .toggle-button {
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
