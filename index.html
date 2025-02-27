@@ -9,11 +9,21 @@
     <link rel="manifest" href="/icons/site.webmanifest">
     <link rel="stylesheet" href="css/style.css">
     <title>homepage</title>
-
 </head>
 <body>
-    <button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-    <h1>Bonjour</h1>
+
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <button id="dark-mode-button" class="toggle-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+            </ul>
+        </nav>
+    </header>
     <script src="js/script.js"></script>
 </body>
 </html>
