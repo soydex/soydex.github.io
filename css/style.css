@@ -186,10 +186,13 @@ body {
 
 .about_me_text p{
     font-size: 40px;
+    transition: all 0.5s;
 }
 .about_me_text p:hover{
     color: #000;
     background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
 }
 .about_me_img{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
