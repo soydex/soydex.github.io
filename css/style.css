@@ -95,10 +95,12 @@ header nav ul li a {
 
 .cards h2 {
     font-size: 40px;
+    padding: 20px;
 }
 
 .cards p {
     font-size: 20px;
+    padding: 20px;
 }
 
 .cards_content {
@@ -106,33 +108,47 @@ header nav ul li a {
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
-    width: 100%;
 }
 
+
+
 .card {
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     gap: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border: 1px solid #000000;;
+    scale: 1.1;
+    backdrop-filter: blur(10px);
+}
+
+
+body.dark-mode .card {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .card img {
+    border-radius: 10px 10px 0 0;
     width: 100%;
-    border-radius: 10px;
+    height: 400px; /* Ajustez cette valeur selon vos besoins */
+    object-fit: cover;
 }
 
-/* Cacher la scrollbar sur Chrome, Edge et Safari */
 ::-webkit-scrollbar {
     display: none;
 }
 
-/* Assurez-vous que le contenu est toujours scrollable */
 body {
     overflow: auto;
     -ms-overflow-style: none;
-    /* Pour Internet Explorer et Edge */
     scrollbar-width: none;
-    /* Pour Firefox */
 }
