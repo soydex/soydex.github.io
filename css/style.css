@@ -17,11 +17,9 @@ body.light-mode {
     background: none;
     color: #ffffff;
     font-size: 16px;
-}
-
-.toggle-button::before{
-    content: ' ';
-    background-image: url('../icons/sun.svg');
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Ajoute un petit espace entre l'icône et le texte (si présent) */
 }
 
 .toggle-button:hover {
@@ -29,10 +27,20 @@ body.light-mode {
     border-radius: 5px;
 }
 
-body.light-mode .toggle-button::before {
-    content: ' ';
-    background-image: url('../icons/moon.svg');
+.toggle-button::before {
+    content: ''; /* Doit exister sinon l'élément ne s'affichera pas */
+    display: inline-block;
+    width: 20px; /* Ajuste selon la taille de ton icône */
+    height: 20px;
+    background-image: url('../imgs/sun.svg');
+    background-size: cover;
+    background-position: center;
 }
+
+body.light-mode .toggle-button::before {
+    background-image: url('../imgs/moon.svg');
+}
+
 
 
 * {
