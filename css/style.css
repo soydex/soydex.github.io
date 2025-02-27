@@ -2,10 +2,12 @@ body {
     position: relative;
     transition: background-color 0.5s, color 0.5s;
 }
+
 body.dark-mode {
     background-color: #121212;
     color: #ffffff;
 }
+
 .toggle-button {
     padding: 10px;
     border: none;
@@ -26,14 +28,14 @@ body.dark-mode .toggle-button {
 }
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-header{
+header {
     position: absolute;
     background-color: rgba(18, 18, 18, 0.514);
     display: flex;
@@ -43,12 +45,12 @@ header{
     align-items: center;
 }
 
-header h3{
+header h3 {
     color: #ffffff;
     padding: 10px;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
     list-style: none;
     padding: 10px;
@@ -56,29 +58,29 @@ header nav ul{
     gap: 20px;
 }
 
-header nav ul li a{
+header nav ul li a {
     color: #ffffff;
     text-decoration: none;
 }
 
-.hero{
+.hero {
     background-image: url('../imgs/wallpaper.jpg');
-    background-size:auto;
-    background-position: center;    
+    background-size: auto;
+    background-position: center;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.hero h1{
+.hero h1 {
     color: #ffffff;
     font-size: 50px;
     text-align: left;
     margin-left: 20px;
 }
 
-.hero p{
+.hero p {
     color: #ffffff;
     font-size: 20px;
     text-align: left;
@@ -86,25 +88,51 @@ header nav ul li a{
     margin-left: 20px;
 }
 
-.cards{
+
+.cards {
+    padding: 100px;
+}
+
+.cards h2 {
+    font-size: 40px;
+}
+
+.cards p {
+    font-size: 20px;
+}
+
+.cards_content {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    width: 100%;
 }
 
-.card{
-    background-color: #ffffff;
+.card {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 300px;
     gap: 10px;
     display: flex;
     flex-direction: column;
 }
 
-.card img{
+.card img {
     width: 100%;
     border-radius: 10px;
+}
+
+/* Cacher la scrollbar sur Chrome, Edge et Safari */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Assurez-vous que le contenu est toujours scrollable */
+body {
+    overflow: auto;
+    -ms-overflow-style: none;
+    /* Pour Internet Explorer et Edge */
+    scrollbar-width: none;
+    /* Pour Firefox */
 }
