@@ -187,8 +187,12 @@ body {
 .about_me_text p{
     font-size: 40px;
 }
-
+.about_me_text p:hover{
+    color: #000;
+    background-color: #ffffff;
+}
 .about_me_img{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
+
