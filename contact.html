@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Formulaire de Support</title>
+  </head>
+  <body style="height: 100vh">
+    <form class="form_support" action="/submit_ticket" method="post">
+      <h1 class="form_support_title">
+        Formulaire de Contact
+      </h1>
+
+      <div class="name_email_div">
+        <div class="name_div">
+          <label class="name_support_label" for="name">Nom</label>
+          <input
+            class="name_support_input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="John Doe"
+            required
+          />
+        </div>
+
+        <div class="email_div">
+          <label class="email_support_label" for="email">Email</label>
+          <input
+            class="email_support_input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="JohnDoe@mail.com"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="subject_div">
+        <label class="subject_support_label" for="subject">Sujet</label>
+        <input
+          class="subject_support_input"
+          type="subject"
+          id="subject"
+          name="subject"
+          placeholder="Sujet de votre problème"
+          required
+        />
+      </div>
+
+      <div class="issue_div">
+        <label class="issue_support_label" for="issue">Problème</label>
+        <textarea
+          class="issue_support_textarea"
+          id="issue"
+          name="issue"
+          rows="4"
+          cols="50"
+          placeholder="Décrivez votre problème ici..."
+          required
+        ></textarea>
+      </div>
+      <input type="submit" value="Soumettre" />
+    </form>
+  </body>
+</html>
