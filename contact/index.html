@@ -6,7 +6,27 @@
     <link rel="stylesheet" href="/css/style.css" />
     <title>Formulaire de Support</title>
   </head>
-  <body style="height: 100vh">
+  <body>
+    
+    <header style="position: static;">
+      <h3>My Website</h3>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <button
+            id="dark-mode-button"
+            class="toggle-button"
+            onclick="toggleDarkMode()"
+          >
+            Toggle Light Mode
+          </button>
+        </ul>
+      </nav>
+    </header>
+
+    <main style="height: 100vh;">
     <form class="form_support" action="/submit_ticket" method="post">
       <h1 class="form_support_title">
         Formulaire de Contact
@@ -64,5 +84,7 @@
       </div>
       <input type="submit" value="Soumettre" />
     </form>
+    </main>
+    <script src="js/script.js"></script>
   </body>
 </html>
