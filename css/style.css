@@ -220,6 +220,16 @@ body {
     border-radius: 10px;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(18, 18, 18, 0.514);
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
 
 /* Contact form */
 
