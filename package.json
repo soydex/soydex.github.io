@@ -2,7 +2,7 @@
   "name": "my_website",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://soydex.github.io/my_website",
+  "homepage": "https://soydex.github.io",
   "type": "module",
   "scripts": {
     "dev": "vite",
