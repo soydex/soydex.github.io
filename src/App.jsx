@@ -64,7 +64,7 @@ function App() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
-            className={`min-h-screen flex flex-col md:flex-row items-start gap-8 max-w-6xl mx-auto px-4 py-24 ${
+            className={`min-h flex flex-col md:flex-row items-start gap-8 max-w-6xl mx-auto px-4 py-24 ${
               index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
             }`}
           >
